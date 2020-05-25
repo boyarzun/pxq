@@ -226,7 +226,7 @@
         var totalSeconds = (+hours) * 60 * 60 + (+minutes) * 60 + (+seconds);
         var pxq = (totalSeconds / 3600) * pricePerHour
 
-        total.text("Total: " + parseInt(pxq))
+        total.text("Total: $" + parseInt(pxq))
 
         $('#chronoExample .values').html(timer.getTimeValues().toString());
     });
