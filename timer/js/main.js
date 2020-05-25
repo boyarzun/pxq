@@ -213,7 +213,21 @@
     $('#pauseButton').click(function () {
         timer.pause();
     });
+
+    var total = $('#total')
+    var pricePerHour = 10000
+
     timer.addEventListener('secondsUpdated', function (e) {
+        var hours = timer.getTimeValues().hours
+        var minutes = timer.getTimeValues().minutes
+        var seconds = timer.getTimeValues().seconds
+
+        // minutes are worth 60 seconds. Hours are worth 60 minutes.
+        var totalSeconds = (+hours) * 60 * 60 + (+minutes) * 60 + (+seconds);
+        var pxq = (totalSeconds / 3600) * pricePerHour
+
+        total.text("Total: " + parseInt(pxq))
+
         $('#chronoExample .values').html(timer.getTimeValues().toString());
     });
     timer.addEventListener('started', function (e) {
