@@ -203,16 +203,10 @@
     }
 
     /*-------------------------------------
-    Countdown activation code
+    Timer
     -------------------------------------*/
 
     var timer = new easytimer.Timer()
-    $('#startButton').click(function () {
-        timer.start();
-    });
-    $('#pauseButton').click(function () {
-        timer.pause();
-    });
 
     var total = $('#total')
     var pricePerHour = 10000
@@ -237,18 +231,26 @@
         $('#chronoExample .values').html(timer.getTimeValues().toString());
     });
 
+    /*-------------------------------------
+    Countdown
+    -------------------------------------*/
+    var countdown = new easytimer.Timer({ countdown: true, startValues: { seconds: 3600 } })
+    $('#countdown').html(countdown.getTimeValues().toString());
+    countdown.addEventListener('secondsUpdated', function (e) {
+        $('#countdown').html(countdown.getTimeValues().toString());
+    });
+    countdown.addEventListener('targetAchieved', function (e) {
+        $('#countdown').html('KABOOM!!');
+    });
 
-    $(function () {
-        var eventCounter = $(".countdown");
-        if (eventCounter.length) {
-            eventCounter.timer("start", function (e) {
-                $(this).html(
-                    e.strftime(
-                        "<div class='countdown-section'><div><div class='countdown-number'>%D</div> <div class='countdown-unit'>Día%!D</div> </div></div><div class='countdown-section'><div><div class='countdown-number'>%H</div> <div class='countdown-unit'>Hora%!H</div> </div></div><div class='countdown-section'><div><div class='countdown-number'>%M</div> <div class='countdown-unit'>Minutos</div> </div></div><div class='countdown-section'><div><div class='countdown-number'>%S</div> <div class='countdown-unit'>Segundos</div> </div></div>"
-                    )
-                );
-            });
-        }
+
+    $('#startButton').click(function () {
+        timer.start();
+        countdown.start();
+    });
+    $('#pauseButton').click(function () {
+        timer.pause();
+        countdown.pause();
     });
 
 })(jQuery);
