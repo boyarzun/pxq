@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="18px" viewBox="0 0 29 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>card_amex</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-credit-cards" transform="translate(-71.000000, 0.000000)" fill-rule="nonzero">
+            <g id="card_amex" transform="translate(71.438000, 0.000000)">
+                <rect id="Rectangle-path" fill="#5EC1EC" x="0" y="0" width="28.125" height="18" rx="4"></rect>
+                <path d="M8.692,11.877 L7.528,11.877 L7.065,10.6 L4.947,10.6 L4.51,11.877 L3.375,11.877 L5.439,6.252 L6.57,6.252 L8.692,11.877 Z M6.722,9.652 L5.992,7.565 L5.276,9.652 L6.722,9.652 Z M9.245,11.877 L9.245,6.252 L10.845,6.252 L11.807,10.089 L12.757,6.252 L14.362,6.252 L14.362,11.877 L13.369,11.877 L13.369,7.45 L12.317,11.878 L11.287,11.878 L10.239,7.45 L10.239,11.878 L9.245,11.878 L9.245,11.877 Z M15.425,11.877 L15.425,6.252 L19.354,6.252 L19.354,7.204 L16.494,7.204 L16.494,8.45 L19.155,8.45 L19.155,9.398 L16.495,9.398 L16.495,10.928 L19.455,10.928 L19.455,11.876 L15.425,11.876 L15.425,11.877 Z M19.824,11.877 L21.634,8.942 L19.994,6.252 L21.244,6.252 L22.307,8.06 L23.347,6.252 L24.587,6.252 L22.94,8.984 L24.751,11.877 L23.461,11.877 L22.286,9.932 L21.108,11.877 L19.825,11.877 L19.824,11.877 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

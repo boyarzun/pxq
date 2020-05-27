@@ -253,4 +253,17 @@
         countdown.pause();
     });
 
+    /*-------------------------------------
+    Form
+    -------------------------------------*/
+
+    //var totalPxQ = pricePerHour * parseInt(hours)
+
+    $("#p").keyup(function () {
+        var p = document.getElementById("p")
+        var pxq = document.getElementById("total-pxq")
+        pxq.value = "Total : $" + String(pricePerHour * parseInt(p.value))
+    })
+
+
 })(jQuery);
